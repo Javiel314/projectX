@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project X</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <img src="" class="nav-flag">
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a class="nav-link" href="#section--2">Person</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section--3">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section--4">Weather</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="header" id="section--1">
+
+        <div class="header-container">
+            <h1 class="header-title">PROJECT <span>X</span></h1>
+        </div>
+
+    </section>
+
+    <section class="section" id="section--2">
+
+        <div class="section-title">
+            <h3 class="section-name">Person</h3>
+            <h2 class="section-description">Introduction to my <span>Person</span> </h2>
+        </div>
+
+        <div class="section-2-container">
+            <div id="" class="layout-section-2 foto-container"> <img class="foto-section-2"
+                    src="img/Bewerbungsfoto.JPG"></div>
+
+            <div id="section-2-paragraph--1" class="layout-section-2"><img
+                    src="https://cdn2.iconfinder.com/data/icons/basic-flat-icon-set/128/study_hat-64.png" loading="lazy"
+                    alt="" class="section-2-img">
+                <p class="paragraph-2">Studies: Computer Science (currently), Chemical Engeneering Degree: Bachelor of
+                    Engeneering
+                </p>
+            </div>
+            <div id="section-2-paragraph--2" class="layout-section-2"><img
+                    src="https://cdn4.iconfinder.com/data/icons/weatherful/72/Lightning-64.png" loading="lazy" alt=""
+                    class="section-2-img">
+                <p class="paragraph-2">Work & Travel in Canada for 1 year</p>
+            </div>
+            <div id="section-2-paragraph--3" class="layout-section-2"><img
+                    src="https://cdn2.iconfinder.com/data/icons/ios-14-custom-application/62/application-23-64.png"
+                    loading="lazy" alt="" class="section-2-img">
+                <p class="paragraph-2">Born in Dominican Republic, raised in Germany</p>
+            </div>
+            <div id="section-2-paragraph--4" class="layout-section-2"><img
+                    src="https://cdn2.iconfinder.com/data/icons/scenarium-vol-5/128/017_map_location_navigation_phone_pin_gps_mobile-64.png"
+                    loading="lazy" alt="" class="section-2-img">
+                <p class="paragraph-2">Hobbies: Fitness, Travel, Hikes, Read, Movies/Shows</p>
+            </div>
+            <div id="section-2-paragraph--5" class="layout-section-2"><img
+                    src="https://cdn4.iconfinder.com/data/icons/business-data-and-growth-color/64/skills-tools-64.png"
+                    loading="lazy" alt="" class="section-2-img">
+                <p class="paragraph-2">Knowledge in C, C++, Java ( Rest API, Java RMI, JDBC, JMS ), Javascript, HTML, CSS, MySQL. Currently learning: Typescript</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section" id="section--3">
+
+        <div class="section-title">
+            <h3 class="section-name">Gallery</h3>
+            <h2 class="section-description">Some pictures of my favorite <span>Places</span> </h2>
+        </div>
+
+        <div class="splide gallery" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img class="gallery-img" src="img/joffre-lakes.JPEG"></li>
+                    <li class="splide__slide"><img class="gallery-img" src="img/bryce-canyon.JPEG"></li>
+                    <li class="splide__slide"><img class="gallery-img" src="img/getty-museum.jpeg"></li>
+                    <li class="splide__slide"><img class="gallery-img" src="img/santa-monica-beach.JPEG"></li>
+                    <li class="splide__slide"><img class="gallery-img" src="img/horseshoe-bend.JPEG"></li>
+                    <li class="splide__slide"><img class="gallery-img" src="img/niagara-falls.jpg"></li>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section" id="section--4">
+        <div class="section-title">
+            <h3 class="section-name">Weather</h3>
+            <h2 class="section-description">Weather in any <span>City</span></h2>
+        </div>
+
+        <div class="weather-container">
+
+            <form class="city-form">
+                <h1>Current Weather in the <img class="world"
+                        src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/globe-64.png"></h1>
+                <p>Are you interest about the current weather of any city? </p>
+                <label for=" city-value">City:</label>
+                <input type="text" name="city-value" id="city--name">
+                <button class="weather-btn" type="submit">Submit</button>
+
+            </form>
+
+            <article class="weather-display-container">
+                <h1>Choose a city for weather infomartion
+                    <div class="weather-flag-container">
+                        <img class="weather-flag"
+                            src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678074-map-64.png">
+                    </div>
+                </h1>
+                <article class="weather-information">
+                    <h2>Weather Type:</h2>
+                    <img class="weather-img"
+                        src="https://cdn4.iconfinder.com/data/icons/iconsland-weather/PNG/64x64/Sunrise.png">
+                </article>
+                <article class="weather-information">
+                    <h2>Temperature:</h2>
+                    <img class="weather-img"
+                        src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_21-64.png">
+                </article>
+                <article class="weather-information">
+                    <h2>Cloud Coverage:</h2>
+                    <img class="weather-img"
+                        src="https://cdn2.iconfinder.com/data/icons/weather-119/512/weather-1-64.png">
+                </article>
+                <article class="weather-information">
+                    <h2>Humidity: </h2>
+                    <img class="weather-img"
+                        src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_44-64.png">
+                </article>
+                <article class="weather-information">
+                    <h2>Wind:</h2>
+                    <p><img class="weather-img"
+                            src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_41-64.png">
+                    </p>
+                </article>
+            </article>
+
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+
+        <article class="disclaimer">
+            <h3>PROJECT <span>X</span></h3>
+            <p>This project is for training purposes only, for calling, processing and displaying data from Rest APIs.
+            </p>
+            <p> No guarantee of the accuracy of the data.</p>
+        </article>
+
+        <ul class="footer-nav">
+            <p>Places in the Gallery by order:</p>
+            <li class="footer-item">
+                <a class="footer-link"
+                    href="https://www.google.com/search?q=upper+joffre+lake&sca_esv=557388832&ei=b5vcZKu2AtaQ9u8P0p6CiA4&ved=0ahUKEwjrqeyV8-CAAxVWiP0HHVKPAOEQ4dUDCA8&uact=5&oq=upper+joffre+lake&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXVwcGVyIGpvZmZyZSBsYWtlMggQLhiKBRiRAjIIEAAYigUYkQIyCBAAGIoFGJECMgUQABiABDIIEAAYigUYkQIyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIXEC4YigUYkQIYlwUY3AQY3gQY4ATYAQFInktQAFioDHAAeACQAQCYAWWgAYwDqgEDNS4xuAEDyAEA-AEBwgIGEC4YBxgewgIHEAAYDRiABMICDRAuGA0YgAQYxwEYrwHCAgYQABgHGB7CAhUQLhgHGB4YlwUY3AQY3gQY4ATYAQHiAwQYACBBiAYBugYGCAEQARgU&sclient=gws-wiz-serp">Upper
+                    Joffre Lake, Whistler, Canada</a>
+            </li>
+            <li class="footer-item">
+                <a class="footer-link"
+                    href="https://www.google.com/search?q=bryce+canyon&sca_esv=557388832&ei=EpzcZNGqCe-P9u8PwI67mAQ&gs_ssp=eJzj4tDP1TdIzisuMGC0UjWosDA3NjVLSjYzMEo2Tk0ySrEyqDBLSrVMsUhLSkpNTDZLMTDz4kkqqkxOVUhOzKvMzwMASF0TcQ&oq=Bry&gs_lp=Egxnd3Mtd2l6LXNlcnAiA0JyeSoCCAAyDRAuGIoFGMcBGK8BGEMyCBAuGIoFGJECMgcQLhiKBRhDMgcQLhiKBRhDMgcQLhiKBRhDMgsQLhiABBjHARivATIFEC4YgAQyBRAAGIAEMgUQLhiABDIFEAAYgAQyHBAuGIoFGMcBGK8BGEMYlwUY3AQY3gQY4ATYAQNIrzFQwhNY9iBwAngBkAEAmAFgoAGLAqoBATO4AQPIAQD4AQGoAgDCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICDhAAGOQCGNYEGLAD2AEBwgIWEC4YigUYxwEYrwEYyAMYsAMYQ9gBAsICEBAuGIoFGMgDGLADGEPYAQLCAg0QLhiKBRjHARjRAxhDwgIHEAAYigUYQ8ICCxAuGIAEGMcBGNEDwgIcEC4YigUYxwEY0QMYQxiXBRjcBBjeBBjgBNgBA8ICDhAuGIoFGMcBGNEDGJEC4gMEGAAgQYgGAZAGD7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFA&sclient=gws-wiz-serp">Bryce
+                    Canyon, Arizona, USA</a>
+            </li>
+            <li class="footer-item">
+                <a class="footer-link"
+                    href="https://www.google.com/search?q=getty+museum&sca_esv=557388832&ei=wJ7cZOLLH86D9u8P04uf0AY&gs_ssp=eJzj4tTP1TcwzC3LMTNgtFI1qLAwSDZKSk4xNzEyMjc2M0uzMqhISTS3MEk0TTQ0TQQCI1MvnvTUkpJKhdzS4tTSXAA9yhL_&oq=getty+museum&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGdldHR5IG11c2V1bSoCCAAyDRAuGK8BGMcBGIoFGEMyBxAAGIoFGEMyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEieJFD2Clj8E3ABeAGQAQCYAXigAeEDqgEDNS4xuAEByAEA-AEBwgIKEAAYRxjWBBiwA8ICChAAGIoFGLADGEPCAgwQLhgHGB4YxwEY0QPCAhwQLhivARjHARiKBRhDGJcFGNwEGN4EGOAE2AEB4gMEGAAgQYgGAZAGCroGBggBEAEYFA&sclient=gws-wiz-serp">Getty
+                    Musuem, Los Angeles, USA</a>
+            </li>
+            <li class="footer-item">
+                <a class="footer-link"
+                    href="https://www.google.com/search?q=santa+monica+beach&sca_esv=557388832&ei=RMXcZN-TPKCMi-gPxYK0gAs&gs_ssp=eJzj4tLP1TcwrkyuKi4yYPQSKk7MK0lUyM3Py0xOVEhKTUzOAACqugrM&oq=Santa+monica+beac&gs_lp=Egxnd3Mtd2l6LXNlcnAiEVNhbnRhIG1vbmljYSBiZWFjKgIIADIIEC4YigUYkQIyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyFxAuGIoFGJECGJcFGNwEGN4EGOAE2AECSIk6UIwHWMUscAV4AZABAJgBb6ABgw2qAQQxNi40uAEByAEA-AEBwgIKEAAYRxjWBBiwA8ICChAAGIoFGLADGEPCAhAQLhiKBRjIAxiwAxhD2AEBwgIWEC4YigUYxwEYrwEYyAMYsAMYQ9gBAcICCxAuGIAEGMcBGK8BwgIHEC4YgAQYCsICBxAAGIAEGArCAgsQLhiABBjHARjRA8ICFBAuGIAEGMcBGK8BGJgFGJ4FGJoFwgIREC4YgAQYxwEYrwEYmAUYmQXCAhQQLhiABBiXBRjcBBjeBBjgBNgBAsICDhAuGIoFGMcBGK8BGJECwgIIEAAYigUYkQLCAhQQLhiABBjHARivARiYBRieBRiZBcICFhAuGIAEGMcBGK8BGJgFGJ4FGJkFGArCAg0QLhiABBjHARivARgK4gMEGAAgQYgGAZAGCLoGBAgBGAi6BgYIAhABGBQ&sclient=gws-wiz-serp">Santa
+                    Monica Beach, Los Angeles, USA</a>
+            </li>
+            <li class="footer-item">
+                <a class="footer-link"
+                    href="https://www.google.com/search?q=horseshoe+bend&sca_esv=557388832&ei=TsXcZNPeJfqMi-gPjPK1mAs&gs_ssp=eJzj4tTP1TcwyyvMyDJg9OLLyC8qTi3OyE9VSErNSwEAdqQJCA&oq=hoerse&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmhvZXJzZSoCCAAyBxAuGIoFGEMyCBAuGIoFGJECMgoQABiKBRjJAxhDMggQABiKBRiSAzIHEC4YigUYQzIHEAAYigUYQzIHEAAYigUYQzIHEC4YigUYQzIHEAAYgAQYCjIHEC4YgAQYCjIWEC4YigUYQxiXBRjcBBjeBBjgBNgBA0jpPlC2BljsMHAEeAGQAQCYAWagAZgFqgEDNy4xuAEByAEA-AEBqAIAwgIKEAAYRxjWBBiwA8ICChAAGIoFGLADGEPCAg4QABjkAhjWBBiwA9gBAcICEBAuGIoFGMgDGLADGEPYAQLCAhYQLhiKBRjHARivARjIAxiwAxhD2AECwgIFEAAYgATCAgUQLhiABMICCxAuGIAEGMcBGNEDwgINEC4YxwEY0QMYigUYQ8ICCxAuGIAEGMcBGK8BwgIREC4YrwEYxwEYgAQYmAUYmQXiAwQYACBBiAYBkAYTugYGCAEQARgJugYGCAIQARgIugYGCAMQARgU&sclient=gws-wiz-serp">Horseshoe
+                    Bend, Arizona, USA</a>
+            </li>
+            <li class="footer-item">
+                <a class="footer-link"
+                    href="https://www.google.com/search?sca_esv=557388832&q=niagara+falls&sa=X&ved=2ahUKEwiDp8i6m-GAAxXKxQIHHUqlAbMQuzF6BAgFEAI&biw=1440&bih=815&dpr=2">Niagara
+                    Falls, Ontario/New York Canada/USA</a>
+            </li>
+        </ul>
+
+        <p class="footer-copyright">
+            &copy; Copyright by
+            <a class="footer-link twitter-link" target="_blank" href="">Javiel
+                Figuereo Schade</a>. Don't claim as your own product.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+/*** Basic styles for elements ***/
+
+:root {
+    --primary-color: #f5f1d9;
+    --secondary-color: #e63946;
+    --tertiary-color: #457b9d;
+    --background-color: #151b29;
+    --background-color-lighter: #171e2d;
+    --background-color-secondary: #252628;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800 bold;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+/*** styles for the navbar ***/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid;
+    height: 4rem;
+    width: 100%;
+    padding: 0 2rem;
+    z-index: 100;
+    background-color: var(--background-color-lighter);
+}
+
+
+.nav-sticky {
+    position: fixed;
+}
+
+.nav-container {
+    padding-left: 0.grem;
+}
+
+.nav-flag {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 3rem;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    display: block;
+    color: var(--secondary-color);
+    text-decoration: none;
+
+    transition: text-shadow 0.25s;
+}
+
+.nav-link-hover {
+    color: #ffffff;
+    box-shadow: 0px 3px 1px #ffffff;
+}
+
+
+
+/*** Styles for the sections ***/
+.header {
+    height: 37rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.header-title>span {
+    color: var(--secondary-color);
+}
+
+.header-container {
+    margin-left: 30rem;
+}
+
+.header-title {
+    font-size: 5rem;
+    margin-bottom: 10rem;
+
+}
+
+.section {
+    font-size: larger;
+    padding: 8rem 3rem;
+    transition: transform 1s, opacity 1s;
+}
+
+.section-hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+
+}
+
+.section-title {
+    display: block;
+    max-width: 80%;
+    margin: 2rem 5rem 7rem 20rem;
+}
+
+.section-title>h3 {
+    color: var(--secondary-color);
+}
+
+.section-name {
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 2.5rem;
+}
+
+#section--2 {
+    font-size: larger;
+}
+
+#section--2>.section-title {
+    margin-left: 23rem;
+}
+
+.section-2-header {
+    align-self: start;
+    justify-self: center;
+}
+
+
+.section-2-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    gap: 25px;
+    align-items: start;
+    justify-items: center;
+    width: 85%;
+    margin-left: 100px;
+}
+
+.foto-section-2 {
+    max-width: 350px;
+    display: cover;
+}
+
+.foto-container {
+    grid-column: 2;
+    grid-row: 1;
+    grid-area: 1/2/2/2;
+    display: cover;
+    align-self: start;
+}
+
+.section-2-header {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.layout-section-2 p {
+    grid-row: 2;
+    width: 200px;
+}
+
+#section-2-paragraph--4 {
+    grid-area: 3/2;
+    align-self: end;
+}
+
+#section-2-paragraph--5 {
+    grid-area: 2/3;
+}
+
+#section--4 {
+    max-width: 90%;
+}
+
+#section--3>.section-title {
+    margin-left: 15rem;
+}
+
+#section--4>.section-title {
+    margin-left: 28rem;
+}
+
+.gallery-img {
+    width: 83rem;
+}
+
+/*** styles for the weather container ***/
+.weather-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.weather-display-container {
+    width: 30%;
+    margin: 0;
+    padding: 0.5%;
+    color: black;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.weather-display-container-hidden {
+    display: none;
+}
+
+
+.weather-flag {
+    width: 1.6rem;
+    align-self: baseline;
+}
+
+.weather-img {
+    width: 2.5rem;
+    margin-left: 0.3em;
+}
+
+.weather-speed {
+    width: 2rem;
+    margin-left: 0.3em;
+}
+
+.city-form>h1 {
+    height: 10%;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.weather-information {
+    background: white;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.weather-information>p,
+.weather-information>h2 {
+    margin: 0.2rem;
+    font-size: 1rem;
+}
+
+.section3 {
+    background-color: #d0d0d0;
+}
+
+.world {
+    width: 4rem;
+    margin-left: 1rem;
+}
+
+/*** styles for the footer ***/
+.footer {
+    padding: 1rem 5rem;
+    background-color: var(--background-color-lighter);
+    border-top: 0.1rem solid var(--secondary-color);
+}
+
+.disclaimer {
+    display: block;
+    margin: 2rem;
+}
+
+.footer-nav {
+    margin: 2rem;
+}
+
+.footer-item {
+    color: var(--tertiary-color);
+    list-style: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    transition: 0.25s;
+}
+
+.footer-link:hover {
+    color: var(--secondary-color);
+}
+
+.footer-copyright {
+    margin: 2rem;
+}
